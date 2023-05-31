@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: gray;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 48px;
+      }
+
+      .card {
+        display: flex;
+        width: 1/3;
+        margin: 0 14px;
+        background-color: white;
+        border-radius: 8px;
+        padding: 8px;
+      }
+
+      .card img {
+        width: 80px;
+      }
+
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card-content input,
+      .card-content button {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 4px;
+        margin: 4px 0;
+      }
+
+      .card-content button {
+        background-color: blue;
+        color: white;
+      }
+
+      .card-content button:hover {
+        background-color: #1d4ed8;
+      }
+
+      .card-content .cursor {
+        cursor: pointer;
+        text-align: center;
+        font-size: 14px;
+        color: blue;
+      }
+
+      .card-content .cursor:hover {
+        text-decoration: underline;
+      }
+
+      .card-content .green-button {
+        background-color: green;
+        color: white;
+      }
+
+      .card-content .green-button:hover {
+        background-color: #047857;
+      }
+
+      .card-content input[type="password"] {
+        font-family: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div>
+          <img
+            class="w-80"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5R36-XtDlNgFF5Dg6-UKLk_Vgbu9h7beugQ9V9g-d5W_fXycnGaiz2FlUvqWlTrFIOYY&usqp=CAU"
+            alt="Facebook logo"
+          />
+          <p class="m-6 text-3xl">
+            Facebook helps you connect and share<br> with the people in your life.</br>
+          </p>
+        </div>
+        <div class="card-content">
+          <input
+            class="border-1 my-2 h-12 rounded-lg border border-gray-200 px-4"
+            type="text"
+            placeholder="Email or phone number"
+          />
+          <input
+            class="border-1 my-2 h-12 rounded-lg border border-gray-200 px-4"
+            type="password"
+            placeholder="Password"
+          />
+          <button
+            class="my-2 rounded-md bg-blue-500 py-3 text-xl font-bold text-white hover:bg-blue-700"
+          >
+            Log In
+          </button>
+          <span class="cursor my-2">Forgotten password?</span>
+          <button
+            class="mx-auto my-2 w-fit rounded-md green-button px-4 py-3 text-xl font-bold text-white hover:bg-green-700"
+          >
+            Create your account
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
